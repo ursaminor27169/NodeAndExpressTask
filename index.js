@@ -3,6 +3,11 @@ var express = require('express');
 var multer  = require('multer');
 var app = express();
 app.set('view engine', 'ejs');
+fs.stat("uploads", function(err, stats) {
+    if (err) {
+        fs.mkdirSync('uploads');
+    };
+});
 var howString;
 
 const storageConfig = multer.diskStorage({

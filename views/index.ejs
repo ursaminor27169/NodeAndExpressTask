@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мем</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body class="container">
+    <h1 class="pink">Прикрепите нужный txt-файл</h1>
+    <form class="my-3" method="post" action="/" enctype="multipart/form-data">
+        <input type="file" name="fileform" />
+        <div class="my-3 form-check">
+            <input type="checkbox" name="check" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Отображать строки таблицы как объекты</label>
+          </div>
+        <button type="submit" class="btn btn-primary"  name="fileform">Submit</button>
+    </form>
+</body>
+</html>
